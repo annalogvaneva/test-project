@@ -15,8 +15,6 @@ Scenario('Price', async ({ I }) => {
     console.log(`I catched footer_cost - ${footer_cost}`); // output of previous step
     if (cost.replace(/\s/g, '') === footer_cost.replace(/\s/g, '')) {//  comparison of the received data 
       console.log('true') // output of result of comparison
-    } else if (cost.replace(/\s/g, '') != footer_cost.replace(/\s/g, '')) {
-      console.log('false')
-      }
+    }
 
     });
